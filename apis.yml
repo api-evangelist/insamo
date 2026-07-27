@@ -1,8 +1,24 @@
 aid: insamo
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/insamo.png
 name: Insamo
-description: 'Insamo is a company surfaced as a portfolio company of playground-global and added to the
-  API Evangelist network as a stub for enrichment. Sector: engineered-biology. This profile is a lead
-  awaiting the enrichment pipeline.'
+description: 'Insamo is a biotechnology company building membrane-permeable, orally available cyclic
+  peptides that combine the binding affinity of antibodies with the pharmacology of small molecules for
+  drug discovery. Its platform automates the design, synthesis, and testing of peptides at large scale and
+  applies machine learning across vast chemical spaces to identify therapeutic candidates. Founded in
+  February 2024 with $12M from Playground Global, venBio, and MRL Ventures Fund, the company operates from
+  Berkeley, California and Chippendale, New South Wales, Australia. Insamo currently publishes no public
+  developer or API surface; this profile tracks the company in the API Evangelist network.'
 url: https://raw.githubusercontent.com/api-evangelist/insamo/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,10 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
 - Engineered Biology
+- Biotechnology
+- Drug Discovery
+- Peptides
+- Machine Learning
+- Therapeutics
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +44,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/insamo-domain-security.yml
 - type: Website
   url: https://insamo.com/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
